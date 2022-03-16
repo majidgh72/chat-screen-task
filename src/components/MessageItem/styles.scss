@@ -1,0 +1,69 @@
+.MessageItem {
+  display: flex;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 10px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .name {
+      font-size: 0.875rem;
+      font-weight: 600;
+      white-space: nowrap;
+      width: 180px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .last-chat {
+      font-size: 0.75rem;
+      color: #888;
+      white-space: nowrap;
+      width: 180px;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .time {
+      font-size: 0.7rem;
+      color: #999;
+    }
+
+    .unread {
+      background-color: #e30404;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 10px;
+      line-height: 1;
+    }
+  }
+}
